@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #fffdf8;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #1d2b64;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles the first input of its type inside each parent */
+input:first-of-type {
+  border-radius: 20px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1d2b64;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.radio-group legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.radio-group label {
+  margin: 0 12px 0 0;
+  font-weight: normal;
+  color: #555;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 2px solid #999;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: #1d2b64;
+  background-color: #f4a261;
+  box-shadow: 0 0 6px rgba(29, 43, 100, 0.6);
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: #1d2b64;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1d2b64;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
